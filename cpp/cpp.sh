@@ -1,0 +1,8 @@
+echo "#include <iostream>"
+echo ""
+echo "using std::cout;      using std::endl;"
+echo ""
+echo "int main()"
+echo "{"
+echo "    return 0;"
+echo "}"

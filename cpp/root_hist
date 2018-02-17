@@ -1,0 +1,255 @@
+.x dcutree.C("pixelTemperatureCalibrationData.xml-2007_11_26-11_00_19-start-and-noLV.xml.dat")
+dcu->Draw("Vbg:n","LIR")
+.x dcutree.C("pixelTemperatureCalibrationData-pilot.xml-2007_11_29-20_29_22-startLV-complete.xml.dat")
+dcu->Draw("Vpc:n", "LIR")
+dcu->Draw("rtd2:n", "LIR")
+dcu->Draw("rtd2*2740/Vpc:n", "LIR")
+pic("startLV_complete-Vpc")
+pic("startLV_complete-rtd2")
+pic("startLV_complete-rtd2-norm")
+pic("startLV_complete-rtd3")
+dcu->Draw("rtd3:n", "LIR")
+pic("startLV_complete-rtd3")
+dcu->Draw("rtd3*2740/Vpc:n", "LIR")
+pic("startLV_complete-rtd3-norm")
+pic("startLV_complete-rtd2-norm")
+.x dcutree.C("pixelTemperatureCalibrationData-pilot.xml-2007_11_29-20_29_22-startLV-complete.xml_FPix_BmO_D1_PRT3.dat")
+dcu->Draw("rtd2:n", "LIR")
+.x dcutree.C("pixelTemperatureCalibrationData-pilot.xml-2007_11_29-20_29_22-startLV-complete.xml_FPix_BmO_D2_PRT3.dat",4)
+dcu->Draw("rtd2:n", "LIR")
+tb()
+dcu->Draw("rtd2*2500/Vpc:n", "LIR")
+TFile *_file0 = TFile::Open("pixelTemperatureCalibrationData-pilot.xml-2007_11_29-20_29_22-startLV-complete.xml_FPix_BmO_D1_PRT3.dat.root")
+TFile *_file1 = TFile::Open("pixelTemperatureCalibrationData-pilot.xml-2007_11_29-20_29_22-startLV-complete.xml_FPix_BmO_D2_PRT3.dat.root")
+.x b
+dcu->Draw("Vpc:n", "LIR")
+dcu->Draw("Vpc", "LIR")
+dcu->Draw("rtd2", "LIR")
+dcu->Draw("rtd2:n", "LIR")
+dcu->Draw("aoh:n", "LIR")
+dcu->Draw("ts:n", "LIR")
+dcu->Draw("rtd2:n", "LIR")
+.! xemacs &
+2634-2616
+(2634-2616)/2
+.ls
+.q
+.ls
+.q
+.x fitLL.C
+.q
+.x fitLL.C
+.x sort.C
+.q
+.L sort.C+
+.q
+FileReader f("/home/zatserkl/macros/xydy.dat")
+.q
+.L sp.C
+.q
+//-- Mon Jan 31 15:27:11 CST 2011
+.L not_used_arg.cpp+
+.q
+//-- Sat Feb 5 16:12:32 CST 2011
+.q
+//-- Sun Apr 17 21:42:41 CDT 2011
+.x vector_erase.cpp
+.q
+//-- Sun Apr 17 21:43:36 CDT 2011
+.x vector_erase.cpp
+.q
+//-- Sun Apr 17 21:43:43 CDT 2011
+.x vector_erase.cpp+
+.q
+//-- Sun Apr 17 21:44:39 CDT 2011
+.x vector_erase.cpp+
+.q
+//-- Sun Apr 17 21:45:21 CDT 2011
+.x vector_erase.cpp+
+.q
+//-- Sun Apr 17 21:46:07 CDT 2011
+.x vector_erase.C+
+.q
+//-- Thu Sep 29 15:16:20 PDT 2011
+.x unionROOT.C
+.q
+//-- Thu Sep 29 15:16:25 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:39:49 PDT 2011
+.x unionROOT.C
+.q
+//-- Thu Sep 29 15:39:57 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:40:59 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:41:26 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 15:46:15 PDT 2011
+.L unionROOT.C+
+.q
+//-- Thu Sep 29 15:47:47 PDT 2011
+.L unionROOT.C+
+.q
+//-- Thu Sep 29 15:48:38 PDT 2011
+.L unionROOT.C+
+.L unionROOT.C+
+.q
+//-- Thu Sep 29 15:51:42 PDT 2011
+.L unionROOT.C+
+.q
+//-- Thu Sep 29 15:53:32 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:54:17 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:57:03 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 15:58:00 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 17:42:19 PDT 2011
+.x unionROOT.C+
+.q
+//-- Thu Sep 29 17:42:57 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:43:14 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:43:48 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:44:04 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:52:56 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:54:40 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:54:55 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:57:19 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 17:58:24 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:02:19 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:02:45 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:08:08 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:08:27 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:08:30 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:10:09 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:10:43 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:10:57 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:15:33 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:19:52 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:22:37 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:24:25 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:25:09 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:25:50 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:26:42 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:28:32 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:40:22 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:41:18 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:49:47 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:52:14 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:53:08 PDT 2011
+.x unionROOT.C+
+//-- Thu Sep 29 18:53:49 PDT 2011
+.x unionROOT.C+
+//-- Thu Jan 10 12:12:50 PST 2013
+.L sscanf_string_float.cpp+
+read_string()
+.q
+//-- Sat Aug 16 12:39:33 PDT 2014
+.L unionROOT.C+
+.q
+//-- Sat Aug 16 12:41:11 PDT 2014
+.L unionROOT.C+
+.
+.q
+//-- Mon Sep 7 13:48:58 PDT 2015
+g = new TGraph("sort_bubble.dat")
+g->SetMarkerStyle(20)
+g->Draw("ap")
+fitp(0,0,2)
+png("sort_bubble.dat")
+g->GetXaxis()->SetTitle("elements to sort")
+png("sort_bubble.dat")
+g->GetYaxis()->SetTitle("time, s")
+png("sort_bubble.dat")
+g->Draw("ap")
+fitp(0,0,3)
+fitp(0,0,4)
+g->Draw("ap")
+fitp(0,0,4)
+//-- Mon Sep 7 14:07:16 PDT 2015
+g = new TGraph("sort_bubble.dat")
+g->SetNameTitle("g","sort_bubble.dat;the number of elements;elapsed time, s")
+g->SetMarkerStyle(20)
+g->Draw("ap")
+fitp(0,0,2)
+gsqrt = new TGraph("sort_bubble.dat","%lg %*lg %lg")
+gsqrt->SetNameTitle("gsqrt","sort_bubble.dat;the number of elements;sqrt(elapsed time), #sqrt{s}")
+gsqrt->SetMarkerStyle(20)
+gsqrt->Draw("ap")
+fitp()
+png("sort_bubble.dat")
+gsqrt->Draw("ap")
+fitp(0,0,2)
+//-- Mon Sep 7 15:33:55 PDT 2015
+.x sort_bubble.dat.C
+.q
+//-- Mon Sep 7 15:35:08 PDT 2015
+.x sort_bubble.dat.C
+//-- Mon Sep 7 19:52:12 PDT 2015
+sqrt(0.100)
+sqrt(0.396)
+sqrt(1.561)
+sqrt(6.219)
+sqrt(24.789)
+sqrt(99.496)
+.x sort_insertion.dat.C
+png("sort_insertion.dat");
+//-- Tue Sep 8 01:36:34 PDT 2015
+sqrt(0.005)
+sqrt(0.012)
+sqrt(0.034)
+sqrt(0.127)
+sqrt(0.479)
+sqrt(1.841)
+.x sort_quicksort.dat.C 
+png("sort_quicksort_sqrt.dat");
+.x sort_quicksort.dat.C 
+png("sort_quicksort.dat");
+.q
+//-- Mon Sep 14 11:10:33 PDT 2015
+floor(2.1)
+floor(-2.1)
+int(-2.1)
+floor(2.9)
+.q
+//-- Tue Apr 26 22:20:50 PDT 2016
+int x,y
+int n = 0
+.q

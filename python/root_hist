@@ -1,0 +1,25 @@
+//-- Mon Dec 4 11:09:50 PST 2017
+108.75 + 712.14 + 365.40
+.q
+//-- Mon Jan 15 02:10:20 PST 2018
+sqrt(360)
+sqrt(90)
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.! python numpy_matrix_SVD.py
+.q
+//-- Mon Jan 15 14:53:19 PST 2018
+0.70710678*0.70710678
+.q

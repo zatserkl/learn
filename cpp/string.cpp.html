@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>~/learn/string.cpp.html</title>
+<meta name="Generator" content="Vim/7.1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body bgcolor="#ffffff" text="#000000"><font face="monospace">
+<font color="#cd00cd">#include </font><font color="#00cd00">&lt;string&gt;</font><br>
+<font color="#cd00cd">#include </font><font color="#00cd00">&lt;iostream&gt;</font><br>
+<br>
+<font color="#0000ff"><b>using</b></font>&nbsp;std<font color="#008b8b">::cout</font>;&nbsp;&nbsp;&nbsp;&nbsp;std<font color="#008b8b">::endl</font>;<br>
+<br>
+main()<br>
+{<br>
+&nbsp;&nbsp;<font color="#ee0000">// this is a comment</font><br>
+&nbsp;&nbsp;<font color="#ff0000"><b>//-- this is an important comment</b></font><br>
+&nbsp;&nbsp;<font color="#a52a2a">//this is a commented out line</font><br>
+<br>
+&nbsp;&nbsp;<font color="#ee0000">// this is some other comment</font><br>
+&nbsp;&nbsp;<font color="#0000ff"><b>for</b></font>&nbsp;(<font color="#0000ff"><b>int</b></font>&nbsp;i=<font color="#0000cd">0</font>; i&lt;<font color="#0000cd">5</font>; ++i) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt; i &lt;&lt;endl;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ee0000">// some other comment</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ee0000">// some Tab here</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ee0000">// tab from here:&nbsp;&nbsp; :to here 2 tabs</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><b>for</b></font>&nbsp;(<font color="#0000ff"><b>int</b></font>&nbsp;j=<font color="#0000cd">0</font>; j&lt;<font color="#0000cd">2</font>; ++j) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><b>for</b></font>&nbsp;(<font color="#0000ff"><b>int</b></font>&nbsp;k=<font color="#0000cd">0</font>; k&lt;<font color="#0000cd">2</font>; ++k) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt; <font color="#00cd00">&quot;xxx&quot;</font>&nbsp;&lt;&lt;endl;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><b>for</b></font>&nbsp;(<font color="#0000ff"><b>int</b></font>&nbsp;l=<font color="#0000cd">0</font>; l&lt;<font color="#0000cd">2</font>; ++l) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ee0000">// comment started from position 11</font><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ee0000">// comment</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}<br>
+<br>
+<font color="#ff00ff"><b>&nbsp;&nbsp;typedef int integer</b></font>;<br>
+<font color="#ff00ff"><b>&nbsp;&nbsp;typedef float real</b></font>;<br>
+<br>
+&nbsp;&nbsp;std<font color="#008b8b">::string</font>&nbsp;s1 = <font color="#00cd00">&quot;This is a string&quot;</font>;<br>
+&nbsp;&nbsp;std<font color="#008b8b">::string</font>&nbsp;s2 = <font color="#00cd00">&quot; &quot;</font>;<br>
+<br>
+&nbsp;&nbsp;s2 = s1;<br>
+&nbsp;&nbsp;cout&lt;&lt; <font color="#00cd00">&quot;s2 = &quot;</font>&nbsp;&lt;&lt; s2 &lt;&lt;endl;<br>
+}<br>
+</font></body>
+</html>

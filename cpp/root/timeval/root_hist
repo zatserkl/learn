@@ -1,0 +1,112 @@
+.L timeval.C+
+.q
+.L timeval.C+
+.q
+.L timeval.C+
+timestamp()
+timeval()
+t
+t->Draw("val:time","")
+.q
+.L timeval.C+
+timeval()
+.q
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+tax("#splitline{%y\/%d}{%H:%M}")
+.q
+gStyle->SetTimeOffset(0)
+t = timeval()
+.q
+gStyle->SetTimeOffset(0)
+.L timeval.C
+t = timeval()
+.qqqqqqqqqqqq
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+tax("#splitline{%y\/%d}{%H:%M}")
+tax(0)
+t->Draw("val:time","time>1225.71e6")
+tax("#splitline{%y\/%d}{%H:%M}")
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+tax("#splitline{%y\/%d}{%H:%M}")
+t->Draw("val:time","time>1225693573 && time<1225722193")
+t->Draw("val:time","time>1225693573 && time<1225721713")
+t->Draw("val:time","time>1225693573 && time<1225721413")
+.q
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+// tax("#splitline{%y\/%d}{%H:%M}")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+new TCanvas
+t->Draw("val:time","time>1225693573 && time<1225721413")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+.q
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+// tax("#splitline{%y\/%d}{%H:%M}")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+new TCanvas
+t->Draw("val:time","time>1225693573 && time<1225721413")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+t->GetHistogram()
+htemp()->GetXaxis()->SetTimeOffset(0,"gmt")
+htemp()->GetXaxis()->SetTimeOffset(0,"")
+tax("#splitline{%y\/%d}{%H:%M}")
+htemp()->GetXaxis()->SetTimeOffset(0,"gmt")
+tax("#splitline{%y\/%d}{%H:%M}")
+htemp()->GetXaxis()->SetTimeOffset(6*3600,"gmt")
+t->Draw("val:time","time>1225693573 && time<1225721413")
+htemp()->GetXaxis()->SetTimeOffset(6*3600,"gmt")
+tax("#splitline{%y\/%d}{%H:%M}")
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","time>1225693573 && time<1225721413")
+t->GetHistogram()->GetXaxis()->SetTimeOffset(0,"gmt")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+t->GetHistogram()->GetXaxis()->SetTimeOffset(7*3600,"gmt")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+t->GetHistogram()->GetXaxis()->SetTimeOffset(6*3600,"gmt")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+t->GetHistogram()->GetXaxis()->SetTimeOffset(7*3600,"gmt")
+t->GetHistogram()->GetXaxis()->SetTimeOffset(0,"gmt")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+gStyle->SetTimeOffset(7*3600)
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+t->Draw("val:time","time>1225693573 && time<1225721413")
+timax(t->GetHistogram()->GetXaxis(), "#splitline{%y\/%d}{%H:%M}")
+.x utc.C
+.q
+new TCanvas
+.x utc.C
+tax("#splitline{%y\/%d}{%H:%M}")
+gStyle->SetTimeOffset(0)
+.q
+gStyle->SetTimeOffset(0)
+.L timeval.C+
+t = timeval()
+t->Draw("val:time","time>1225693573 && time<1225721413")
+tax("#splitline{%y\/%d}{%H:%M}")
+t->GetHistogram()
+h=t->GetHistogram()
+h->GetXaxis()->SetTimeOffset(1*3600)
+tax("#splitline{%y\/%d}{%H:%M}")

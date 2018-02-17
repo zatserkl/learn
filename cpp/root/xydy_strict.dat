@@ -1,0 +1,12 @@
+        # this is a comment
+// this is a commented out line too
+ 1   1   .5     t
+2   20  2
+3   30  3
+4   25  3
+5   35  4
+100
+# NB: the line below has few spaces " "
+   
+
+

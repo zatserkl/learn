@@ -1,0 +1,444 @@
+.x sort.C
+.w
+.q
+.x sort.C
+.x sort.C+
+.x sort.C
+.x sort.C+
+.x sort.C
+.x sortxy.C
+.x sort.C
+.q
+.x sortxy.C
+.q
+.x sort.C
+.q
+.x sort.C
+.q
+.x sort_cpp.C
+.q
+.x sort_cpp.C
+.q
+.x sort_cpp.C
+.q
+.x sort_cpp.C
+.q
+.L tree_example.C
+tree_write()
+t->GetEstimate()
+.q
+TFile *_file0 = TFile::Open("tree_example.root")
+t
+t->GetEstimate()
+.q
+.L tree_example_estimate.C 
+tree_write()
+.q
+.L tree_example_estimate.C 
+tree_write()
+.q
+.L tree_example_estimate.C+
+tree_write()
+.q
+.L tree_example_estimate.C
+tree_write()
+.q
+.L tree_example.C
+tree_write()
+.q
+.L tree_example.C+
+tree_write()
+.q
+.L tree_example.C+
+tree_write()
+t->GetEstimate()
+.q
+.L tree_example.C
+tree_write()
+t->GetEstimate()
+.fq
+.q
+TFile *_file0 = TFile::Open("tree_example.root")
+t
+t->GetEstimate()
+.q
+.x strcmp_root.C
+.q
+.x strcmp_root.C
+.q
+gSystem->Getenv("TZ")
+const char[] ch=""
+const char ch[]=""
+ch
+.q
+.x strcmp_root.C
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.x h200_h100.C
+h200->Draw()
+.q
+.x h200_h100.C
+h200->Draw()
+new TCanvas;
+h100->Draw()
+h100->Draw("same")
+.q
+.x h200_h100.C
+.q
+.x h200_h100.C
+.L classtree.C+
+classtree()
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+.q
+.L classtree.C+
+classtree()
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.x fillrandom.C
+.q
+.x hstack.C
+.x hstack_simple.C
+.q
+sqrt(2*TMath::Pi())
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.qqqqqqqqqqqqqqq
+.qqqqqqqqqqqqq
+.q
+.q
+.q
+.q
+.q
+.L testIntegralGaus.C 
+testIntegralGaus()
+.q
+.L testIntegralGaus.C+
+testIntegralGaus()
+.q
+.L mathmoreIntegration.C+
+.L mathmoreIntegration.C+
+.q
+.x mathmoreIntegration.C+
+.q
+.L gauss.C+
+.L gauss.C+
+gauss()
+.q
+.L gauss.C+
+gauss()
+.q
+.L gauss.C+
+.q
+.L gauss.C+
+.q
+.L gauss.C+
+.q
+.
+.q
+.L gauss.C+
+gauss()
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.x gauss.C
+.q
+.x gauss.C
+.q
+.q
+.q
+.q
+.x gauss.C
+.q
+.q
+4 * 1.33257e+03
+.q
+.q
+lin()
+5323*30*2.5
+5323*30*2.5/4
+png(
+@
+png("gauss")
+png("gauss")
+.q
+.x gauss.C
+.q
+.L gauss.C+
+.q
+gSystem->Load("libMathMore"); 
+.L gauss.C+
+.q
+gSystem->Load("libMathMore");
+ROOT::Math::GSLIntegrator gslIntegrator()
+.q
+.q
+.q
+.q
+.q
+.x gauss.C
+.x gauss.C
+png(
+@
+png(
+;
+@
+@
+png("gauss")
+.q
+.q
+.q
+.q
+.x intgaus.C 
+.q
+.x intgaus.C
+.q
+intgaus()
+.q
+.q
+.q
+.q
+.L stringstream.C
+stringstream_loop()
+.q
+.L stringstream.C
+stringstream_loop()
+.q
+const char str[] = "   "
+strlen(str)
+if (*str == ' ') cout<< "empty"
+if (*str == ' ') cout<< "empty";
+if (*str == ' ') cout<< "empty";
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.q
+.x xydy.C+
+.q
+.x xydy.C+
+.! ls /home/zatserkl/learn/root/./xydy_C_ACLiC_dict.cxx
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C+
+.q
+.x xydy.C+
+.q
+.x xydy.C
+.q
+.x xydy.C+
+.q
+.x xydy.C+
+.a
+.q
+.x xydy.C+
+.q
+.x xydy.C+
+.x xydy.C+
+.q
+.q
+.q
+.L xydy.C+
+xydy()
+.q
+.L xydy.C
+xydy()
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C+
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C+
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.x xydy.C
+.x xydy.C
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.x xydy.C+
+.q
+.qqqqqqqqqqq
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.q
+.x xydy.C
+.x xydy.C
+.x xydy.C
+.q
+.q
+.q
+.x xydy.C+
+.q
+.x xydy.C+
+.q
+.q
+.q
+.x gauss.C
+.q
+.x gauss.C
+triagArea()
+.q
+.x gauss.C
+triagArea()
+.q
+.q
+.q
+.q
+.x gauss.C
+triagArea()
+png("triagArea")
+.x gauss.C
+png("triagArea")
+triagArea()
+.q
+.x gauss.C
+triagArea()
+.q
+.x gauss.C
+triagArea()
+.q
+.q
+.q
+.q
+png("triagArea")
+.q
+.q
+png("triagArea")
+.x sort.C
+.x sort.C
+.q
+.x sort.C
+.q
+.x sort.C
+.x sort.C
+.q
+.x sort.C
+.q
+.x sort.C+
+.q
+.x sort.C
+.q
+.x sort.C+
+.q
+.x sort.C+
+.x sort.C+
+.x sort.C+
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C+
+.x sort.C
+.x sort.C
+.x sort.C
+.x sort.C
