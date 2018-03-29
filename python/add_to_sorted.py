@@ -22,6 +22,9 @@ def increasing_order():
     # psort.pop()           # removes the last item
     print('psort:', psort)
 
+    for p in psort:
+        print('p:', p[0], p[1])
+
 
 def decreasing_order():
     print('\ndecreasing_order')
