@@ -34,7 +34,10 @@ plt.gca().set_ylim(ymin - 0.05*yrange, ymax + 0.05*yrange)
 #  fit  #
 #########
 
-fitfun = lambda x, *p: p[0] + p[1]*x    # mathematicians call this model
+
+# fitfun = lambda x, *p: p[0] + p[1]*x      # no sense: bounds lambda with name
+def fitfun(x, *p): return p[0] + p[1]*x     # mathematicians call this model
+
 
 popt0 = 0., 1.
 
@@ -53,7 +56,7 @@ except RuntimeError as e:
     print 'Terminated'
     plt.show()      # plot whatever we have
     exit()
-    
+
 perr = np.sqrt(np.diag(pcov))           # from curve_fit documentation
 
 print 'popt:', popt
