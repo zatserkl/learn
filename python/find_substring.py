@@ -10,6 +10,7 @@ def findall(s, p):
         i = s.find(p, i+1)
 
 
+#    0123456789 123456789 123456789
 s = "abcdefghidefklmdefxyz"
 pattern = "def"
 
