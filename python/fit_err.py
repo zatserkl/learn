@@ -35,7 +35,7 @@ plt.gca().set_ylim(ymin - 0.05*yrange, ymax + 0.05*yrange)
 #########
 
 
-# fitfun = lambda x, *p: p[0] + p[1]*x      # no sense: bounds lambda with name
+# fitfun = lambda x, *p: p[0] + p[1]*x      # ok, but bounds lambda with name
 def fitfun(x, *p): return p[0] + p[1]*x     # mathematicians call this model
 
 
