@@ -52,16 +52,16 @@ try:
     popt, pcov = curve_fit(fitfun, x, y, popt0, ey, absolute_sigma=True)    # set absolute_sigma to True, because our errors are sigmas
     # popt, pcov = curve_fit(fitfun, x, y, popt0, ey, absolute_sigma=False) # default absolute_sigma
 except RuntimeError as e:
-    print '***Exception RuntimeError:', e
-    print 'Terminated'
+    print("***Exception RuntimeError:", e)
+    print("Terminated")
     plt.show()      # plot whatever we have
     exit()
 
 perr = np.sqrt(np.diag(pcov))           # from curve_fit documentation
 
-print 'popt:', popt
-print 'pcov:\n', pcov
-print 'Result: p0 =', popt[0], '+-', perr[0], 'p1 =', popt[1], '+-', perr[1]
+print("popt:", popt)
+print('pcov:\n', pcov)
+print('Result: p0 =', popt[0], '+-', perr[0], 'p1 =', popt[1], '+-', perr[1])
 
 ##################################
 #   plot the fitted function     #
