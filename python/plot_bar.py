@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from collections import Counter
 
-grades = [83,95,91,87,70,0,85,82,100,67,73,77,0]
+grades = [83, 95, 91, 87, 70, 0, 85, 82, 100, 67, 73, 77, 0]
 
 # bin to decimals
 
@@ -13,7 +13,7 @@ grades = [83,95,91,87,70,0,85,82,100,67,73,77,0]
 # def decile(grade): return grade // 10 * 10      # recommended
 
 # histogram = Counter([decile(grade) for grade in grades])                  # use function decile
-histogram = Counter([(lambda(x): x // 10 * 10)(grade) for grade in grades]) # use lambda directly
+histogram = Counter([(lambda x: x // 10 * 10)(grade) for grade in grades])  # use lambda directly
 
 plt.figure()
 plt.bar(histogram.keys(), histogram.values(), width=8)
