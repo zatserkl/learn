@@ -2,35 +2,38 @@ import sys
 
 
 class FileStream:
+    """ Creates generator for the file content.
+    The method next_line returns the next line from the generator.
+    Calling rountine should catch StopIteration in case of EOF.
+    """
     def __init__(self, fname):
         self.fname = fname
         self.gen_stream = self.__stream(self.fname)
 
     def __stream(self, fname):
+        """ Create generator for lines
+        """
         with open(fname) as filestream:
             line = filestream.readline()
             while line:
                 yield line
                 line = filestream.readline()
 
-    def get_line(self):
-        """ Catch StopIteration in calling routine to get end-of-stream.
-        See https://stackoverflow.com/questions/4741243/how-to-pick-just-one-item-from-a-generator-in-python
+    def next_line(self):
+        """ Returns the next line from the generator.
+        Raises StopIteration at EOF. Catch it in the calling routine.
         """
-        return next(self.gen_stream)    # will raise StopIteration at end
+        return next(self.gen_stream)    # will raise StopIteration at EOF
 
 
 def yield_line(fname):
+    """ Standalone function
+    """
     with open(fname) as file:
         line = file.readline()
         while line:
             yield line
             line = file.readline()
-
-
-# it's better to implement in class
-# def stream_line(fname):
-#    gen_file = yield_line(fname)
 
 
 if __name__ == "__main__":
@@ -58,9 +61,10 @@ if __name__ == "__main__":
         nlines += 1
         if nlines > nlines_max:
             break
+
         line = ""
         try:
-            line = filestream.get_line()
+            line = filestream.next_line()
         except StopIteration:
             print("End-of-stream")
             break
