@@ -25,7 +25,7 @@ def nfiles(path=".", nfiles_min=0):
     if os.path.islink(path):
         return
 
-    #--Python2_only-- info_list = os.walk(path).next()
+    # --Python2_only-- info_list = os.walk(path).next()
     info_list = next(os.walk(path))
 
     dirs = info_list[1]
@@ -44,7 +44,7 @@ def nfiles(path=".", nfiles_min=0):
     # recursive call
 
     for dir in dirs:
-        dir_child = path_file = os.path.join(path, dir)
+        dir_child = os.path.join(path, dir)
         nfiles(dir_child, nfiles_min)
 
 
@@ -52,7 +52,8 @@ if __name__ == "__main__":
 
     if len(sys.argv) > 1 and sys.argv[1] in ["-h", "--help"]:
         print("Prints the number of ordinary files in each directory")
-        print("Usage:", __file__, "[path] [the minimum number of files to report]")
+        print("Usage:", __file__,
+              "[path] [the minimum number of files to report]")
         exit()
 
     path = "."
