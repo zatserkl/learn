@@ -20,9 +20,10 @@ plt.title('y vs x')
 plt.xlabel('x')
 plt.ylabel('y')
 
-# plt.legend(loc=1, numpoints=1) # loc=1 is the default location, default numpoints=2 in the legend
+# plt.legend(loc=1, numpoints=1) # defaults: loc=1, numpoints=2 in the legend
 plt.legend(loc=2, numpoints=1)   # loc=2 is the top left corner
 
-plt.grid(True)          # turn on gridlines
+plt.grid(True)                      # turn on gridlines
+# plt.gcf().set_size_inches(6.5, 5)   # gcf: get current figure
 
 plt.show()

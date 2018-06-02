@@ -25,7 +25,7 @@ def fitGauss_curve_fit(x, y, ey):
     try:
         popt, pcov = curve_fit(funGauss, x, y, popt0, ey, True)
     except RuntimeError as e:
-        print '***Exception RuntimeError:', e
+        print('***Exception RuntimeError:', e)
         return [], []   # parameters and errors
     # except OptimizeWarning as e:
     #     print '***Exception OptimizeWarning:', e
@@ -59,7 +59,7 @@ fname = "evt14.dat"
 
 d = read_csv(fname, delim_whitespace=True, names=['t', 'w1', 'w2'])
 
-print d[:5]
+print(d[:5])
 
 plt.figure()
 plt.gcf().suptitle('Traces', fontsize=14)       # suptitle: the global title. NB: default font size is too small.
@@ -95,8 +95,8 @@ nbins = 20      # the number of bins
 
 xbins = np.linspace(xmin, xmax, nbins+1)  # NB: bin width = (xmax - xmin) / nbins. Cf in ROOT: 100 bins from 0 to 100.
 
-print 'xbins:\n', xbins
-print 'xmin =', xmin, 'xmax =', xmax, 'nbins =', nbins
+print('xbins:\n', xbins)
+print('xmin =', xmin, 'xmax =', xmax, 'nbins =', nbins)
 
 plt.subplot(211)
 plt.title('Channel 1')
@@ -126,9 +126,9 @@ if len(popt) == 0:
     plt.show()
     exit()
     
-print u'Const = {:g} \u00B1 {:g}'.format(popt[0], perr[0])
-print u'Mean  = {:g} \u00B1 {:g}'.format(popt[1], perr[1])
-print u'Sigma = {:g} \u00B1 {:g}'.format(popt[2], perr[2])
+print(u'Const = {:g} \u00B1 {:g}'.format(popt[0], perr[0]))
+print(u'Mean  = {:g} \u00B1 {:g}'.format(popt[1], perr[1]))
+print(u'Sigma = {:g} \u00B1 {:g}'.format(popt[2], perr[2]))
 
 # plot the fit function
 xfun = np.linspace(xmin, xmax, 100)             # 100 points
@@ -138,7 +138,7 @@ text_par = "Const\t%0.3g $\pm$ %0.3g\nMean\t%0.3g $\pm$ %0.3g\nSigma\t%0.3g $\pm
            % (popt[0], perr[0], popt[1], perr[1], popt[2], perr[2])
 plt.text(0.60, 0.95, text_par, transform=plt.gca().transAxes, va='top', bbox={'fill':False})
 
-print 'the number of events in histogram sum(yval) =', sum(yval)
-print 'the number of events under the function is sqrt(2*pi)*A*sigma/width =', np.sqrt(2*np.pi)*popt[0]*popt[2]/width
+print('the number of events in histogram sum(yval) =', sum(yval))
+print('the number of events under the function is sqrt(2*pi)*A*sigma/width =', np.sqrt(2*np.pi)*popt[0]*popt[2]/width)
 
 plt.show()
