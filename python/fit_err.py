@@ -44,7 +44,7 @@ popt0 = 0., 1.
 #
 # Change of absolute_sigma from default False to True:
 #
-# Paramets popt are the same, but pcov are different.
+# Parameters popt are the same, but pcov are different.
 # Use True for errors as actual sigma
 #
 

@@ -13,5 +13,5 @@ y = np.arange(10) + 2*np.random.randn(10)
 xerr = 2*np.random.random(10)
 yerr = 2*np.random.random(10)
 
-plt.errorbar(x,y,xerr=xerr,yerr=yerr,fmt='bo')
+plt.errorbar(x, y, xerr=xerr, yerr=yerr, fmt='bo')
 plt.show()

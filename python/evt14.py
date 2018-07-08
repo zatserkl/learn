@@ -4,10 +4,13 @@ import matplotlib.pyplot as plt
 import numpy as np                      # for np.linspace
 from scipy.optimize import curve_fit
 
+
 def funGauss(x, *par):
-    """This function is used in fitGauss for fitting and in the main for plotting
+    """
+    This function is used in fitGauss for fitting and in the main for plotting
     """
     return par[0] * np.exp(-0.5 * ((x - par[1])/par[2])**2)
+
 
 def fitGauss_curve_fit(x, y, ey):
     """
@@ -33,6 +36,7 @@ def fitGauss_curve_fit(x, y, ey):
     
     perr = np.sqrt(np.diag(pcov))       # from curve_fit documentation
     return popt, perr
+
 
 ####################
 #       main       #

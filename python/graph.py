@@ -1,4 +1,6 @@
+from __future__ import print_function
 from collections import deque
+
 
 class Graph:
     def __init__(self):
@@ -15,7 +17,7 @@ class Graph:
 
     def show(self):
         for i,vertex in enumerate(self.vertices):
-            print i, vertex
+            print(i, vertex)
 
     #
     # Depth First Search
@@ -81,17 +83,23 @@ class Graph:
             self.color[u] = 2                   # mark black: done with this vertex
         return self.pred, self.dist
 
+
 ############################
 # General purpose function #
 ############################
         
 def path(pred, vertex):
     v = vertex
-    print v,
+    print(v, end='')
     while pred[v] >= 0:
         v = pred[v]
-        print '-->', v,
-    print ''
+        print('-->', v, end='')
+    print()
+
+
+#
+# main
+#
 
 #       1-------2----6
 #       |       |
@@ -112,7 +120,7 @@ graph.addVertex([2])            # 6
 graph.addVertex([8])            # 7
 graph.addVertex([7])            # 8
 
-print graph
+print(graph)
 graph.show()
 
 s = 0                           # get path to this vertex
@@ -121,18 +129,18 @@ s = 0                           # get path to this vertex
 # Depth First Search
 #
 
-print '\nDepth First Search'
+print('\nDepth First Search')
 
 pred = graph.depthFirstSearch(s)
 
-print 'pred:', pred
+print('pred:', pred)
 for i,iv in enumerate(pred):
-    print i, iv
+    print(i, iv)
 
-# print '\npath for vertex 5 to vertex 0\n'
+# print('\npath for vertex 5 to vertex 0\n')
 # path(pred, 5)
 
-print '\npath to vertex 0 (if any)\n'
+print('\npath to vertex 0 (if any)\n')
 
 for v in range(len(pred)):
     path(pred, v)
@@ -141,14 +149,14 @@ for v in range(len(pred)):
 # Breadth First Search
 #
 
-print '\nBreadth First Search'
+print('\nBreadth First Search')
 
 pred, dist = graph.breadthFirstSearch(s)
 
-print 'pred =', pred
-print 'dist =', dist
+print('pred =', pred)
+print('dist =', dist)
 
-print '\npath to vertex 0 (if any)\n'
+print('\npath to vertex 0 (if any)\n')
 
 for v in range(len(pred)):
     path(pred, v)

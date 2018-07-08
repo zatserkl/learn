@@ -25,7 +25,7 @@ def gauss_distribution(N=12, ngroups=1000):
     """plot distribution
     """
 
-    print 'N =', N, 'ngroups =', ngroups
+    print('N =', N, 'ngroups =', ngroups)
     
     random.seed(0)
 
@@ -61,20 +61,20 @@ def gauss_distribution(N=12, ngroups=1000):
     mean  = mean0
     sigma = sigma0 / math.sqrt(N)
 
-    print 'expected: mean =', mean, 'sigma =', sigma
+    print('expected: mean =', mean, 'sigma =', sigma)
 
     #
     # calculate sigma
     #
     
-    variance = sum([(x-mean)**2 for x in xgauss]) / ngroups # use exact mean = 0.5
+    variance = sum([(x-mean)**2 for x in xgauss]) / ngroups
     sigma_calc = math.sqrt(variance)
-    print 'sigma_calc =', sigma_calc
+    print('sigma_calc =', sigma_calc)
 
     mean_est = sum(xgauss) / ngroups
-    variance_est = sum([(x-mean_est)**2 for x in xgauss]) / (ngroups-1) # use exact mean = 0.5
+    variance_est = sum([(x-mean_est)**2 for x in xgauss]) / (ngroups-1)
     sigma_calc_est = math.sqrt(variance_est)
-    print 'mean_est =', mean_est, 'sigma_calc_est =', sigma_calc_est
+    print('mean_est =', mean_est, 'sigma_calc_est =', sigma_calc_est)
 
     #########################
     # plot the distribution #
@@ -128,7 +128,7 @@ def gauss_distribution(N=12, ngroups=1000):
     # NB: we already estimated mean and sigma
 
     A = max(ybins_arr)
-    print 'A =', A
+    print('A =', A)
 
     popt0 = [A, mean, sigma]
 
@@ -137,18 +137,18 @@ def gauss_distribution(N=12, ngroups=1000):
         popt, pcov = curve_fit(fun, xbins_arr, ybins_arr, popt0, yerr_arr, True) # absolute_sigma = True
     except RuntimeError as e:
         # print "Minimization failed: {0}: {1}".format(e.errno, e.stderror)
-        print '***Exception RuntimeError:', e
-        print 'Terminated'
+        print('***Exception RuntimeError:', e)
+        print('Terminated')
         plt.show()      # plot whatever we have
         return
 
-    print 'popt:', popt
-    print 'pcov:\n', pcov
+    print('popt:', popt)
+    print('pcov:\n', pcov)
 
     # Parameters' errors
     perr = np.sqrt(np.diag(pcov))
 
-    print 'Result: A =', popt[0], '+-', perr[0], 'Mean =', popt[1], '+-', perr[1], 'Sigma =', popt[2], '+-', perr[2]
+    print('Result: A =', popt[0], '+-', perr[0], 'Mean =', popt[1], '+-', perr[1], 'Sigma =', popt[2], '+-', perr[2])
 
     #####################
     # plot the function #

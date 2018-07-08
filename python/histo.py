@@ -12,12 +12,12 @@ class Histo:
         Histo.counter += 1
         self.data = data
         self.title = title
-        print 'Histo constructor for', self.title
+        print('Histo constructor for', self.title)
         # print 'Histo.__privateGlobalNumber =', Histo.__privateGlobalNumber, 'is NOT the same as Histo._Histo__privateGlobalNumber =', Histo._Histo__privateGlobalNumber
-        print 'Histo.__privateGlobalNumber =', Histo.__privateGlobalNumber
+        print('Histo.__privateGlobalNumber =', Histo.__privateGlobalNumber)
 
     def __del__(self):
-        print 'Histo destructor for', self.title
+        print('Histo destructor for', self.title)
         if Histo:
             Histo.__privateGlobalNumber -= 1
             Histo.counter -= 1
@@ -31,10 +31,10 @@ class Histo:
 
         data_min = min(self.data)
         data_max = max(self.data)
-        if self.debug: print 'min =', data_min, 'max =', data_max
+        if self.debug: print('min =', data_min, 'max =', data_max)
         range = data_max - data_min
         width = (data_max - data_min) / self.nbins
-        if self.debug: print 'width =', width
+        if self.debug: print('width =', width)
 
         # for point in self.data:
         #     print point / width
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     #   Add attribute
     #
     
-    print '\nTurn Histo.debug = True for the first histogram created\n'
+    print('\nTurn Histo.debug = True for the first histogram created\n')
     Histo.debug = True
     
     histo10 = Histo(grades, 'histo for 10 bins')
@@ -110,8 +110,8 @@ if __name__ == "__main__":
     # histo10.remark = '10 bins'             # add a new attribute directly
     setattr(histo10, 'remark', '10 bins')    # add a new attribute with setattr
     
-    print '\nhisto10._Histo__privateLocalNumber =', histo10._Histo__privateLocalNumber
-    print '--> after histo10: Histo.counter =', Histo.counter
+    print('\nhisto10._Histo__privateLocalNumber =', histo10._Histo__privateLocalNumber)
+    print('--> after histo10: Histo.counter =', Histo.counter)
     
     # print '\nTurn Histo.debug = False for the rest of histograms\n'
     # Histo.debug = False
@@ -120,31 +120,31 @@ if __name__ == "__main__":
     histo8.prepare(10)
     histo8.remark = '8 bins'                 # add a new attribute directly
     # setattr(histo8, 'remark', '8 bins')    # add a new attribute with setattr
-    print '--> after histo8: Histo.counter =', Histo.counter
+    print('--> after histo8: Histo.counter =', Histo.counter)
     
     histo4 = Histo(grades, 'histo for 4 bins')
     histo4.prepare(4)
-    print '--> after histo4: Histo.counter =', Histo.counter
+    print('--> after histo4: Histo.counter =', Histo.counter)
     
-    print 'histo4._Histo__privateGlobalNumber =', histo4._Histo__privateGlobalNumber
+    print('histo4._Histo__privateGlobalNumber =', histo4._Histo__privateGlobalNumber)
     
-    print '\nbefore creation of histogram list: Histo._Histo__privateGlobalNumber =', Histo._Histo__privateGlobalNumber
+    print('\nbefore creation of histogram list: Histo._Histo__privateGlobalNumber =', Histo._Histo__privateGlobalNumber)
     
     histos = [histo10, histo8, histo4]
     
-    print 'after creation of histogram list: Histo._Histo__privateGlobalNumber =', Histo._Histo__privateGlobalNumber
+    print('after creation of histogram list: Histo._Histo__privateGlobalNumber =', Histo._Histo__privateGlobalNumber)
     
-    print '\nattribute remark'
+    print('\nattribute remark')
     for h in histos:
         # print getattr(h, 'remark')         # get the new attribute with getattr
         # print h.remark                       # get the new attribute directly
-        if hasattr(h, 'remark'): print h.title, 'has a remark', h.remark
-        else: print h.title, 'does not have an attribute remark'
+        if hasattr(h, 'remark'): print(h.title, 'has a remark', h.remark)
+        else: print(h.title, 'does not have an attribute remark')
     
-    print '\ndelete histo8'
+    print('\ndelete histo8')
     histo8.__del__()
     
-    print '\nlook at the second element of the array histos'
-    print 'histos[1].title =', histos[1].title
+    print('\nlook at the second element of the array histos')
+    print('histos[1].title =', histos[1].title)
     
-    print '\nBye: going out of scope of main'
+    print('\nBye: going out of scope of main')
