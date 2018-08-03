@@ -3,3 +3,4 @@
 *.class
 a.out
 .idea
+__pycache__
