@@ -79,7 +79,6 @@ def print_phantom(phantom):
 
 N = 2
 phantom_v = np.zeros((N, N))  # true values
-
 phantom_w = np.zeros((N, N))  # weights
 phantom_d = np.zeros((N, N))  # derivatives
 
@@ -106,14 +105,14 @@ print_phantom(phantom_v)
 tracks = []
 # the track energy will be measured later
 tracks.append(Track(Einc, [(0, 0), (0, 1)]))
-tracks.append(Track(Einc, [(1, 0), (1, 1)]))
+### tracks.append(Track(Einc, [(1, 0), (1, 1)]))  # arbitrary eliminated
 tracks.append(Track(Einc, [(0, 0), (1, 0)]))
 tracks.append(Track(Einc, [(0, 1), (1, 1)]))
 tracks.append(Track(Einc, [(0, 0)]))
-tracks.append(Track(Einc, [(1, 0), (0, 1)]))
+### tracks.append(Track(Einc, [(1, 0), (0, 1)]))  # arbitrary eliminated
 tracks.append(Track(Einc, [(1, 1)]))
 tracks.append(Track(Einc, [(1, 0)]))
-tracks.append(Track(Einc, [(0, 0), (1, 1)]))
+### tracks.append(Track(Einc, [(0, 0), (1, 1)]))  # arbitrary eliminated
 tracks.append(Track(Einc, [(0, 1)]))
 
 # measure the energy
