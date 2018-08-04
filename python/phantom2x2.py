@@ -93,8 +93,12 @@ Track.phantom_w = phantom_w
 Track.phantom_d = phantom_d
 Track.Einc = Einc
 
+#
 # set the phantom density (in terms of energy loss)
+#
 phantom_v[1, 1] = 10  # loss 10 MeV
+phantom_v[1, 0] = 3   # loss 3 MeV
+phantom_v[0, 0] = 5   # loss 5 MeV
 
 print('"real" phantom\n')
 print_phantom(phantom_v)
