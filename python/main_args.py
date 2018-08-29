@@ -6,8 +6,13 @@ def hello(name):
 
 if __name__ == "__main__":
 
+    print('\nlen(sys.argv) =', len(sys.argv))
+    print()
+
     for i in range(len(sys.argv)):
         print("{0:d}\t {1:s}".format(i, sys.argv[i]))
+
+    print()
 
     for i, arg in enumerate(sys.argv):
         print("{0:d}\t {1:s}".format(i, sys.argv[i]))
