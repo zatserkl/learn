@@ -1,4 +1,5 @@
 # from https://matplotlib.org/faq/howto_faq.html
+# Section "Generate images without having a window appear"
 
 import matplotlib
 
