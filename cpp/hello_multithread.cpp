@@ -1,5 +1,5 @@
 /*
-clang++ -Wall -std=c++17 hello_multithead.cpp
+clang++ -Wall -std=c++17 hello_multithread.cpp
 */
 
 #include <iostream>
