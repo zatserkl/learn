@@ -1,4 +1,5 @@
 // http://www.cplusplus.com/reference/memory/unique_ptr/operator-%3E/
+// See also about std::make_unique at https://shaharmike.com/cpp/unique-ptr/
 
 // Modified: Andriy Zatserklyaniy <zatserkl@gmail.com> Sep 15, 2018
 
