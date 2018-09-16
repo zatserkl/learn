@@ -55,7 +55,7 @@ int main()
     fun();
     cout<< "after fun call" <<endl<<endl;
 
-    std::unique_ptr<C> c = fun_return();
+    auto c = fun_return();
     cout<< "c->a = " << c->a << " c->b = " << c->b <<endl;
 
     cout<< "after fun_return call" <<endl;
