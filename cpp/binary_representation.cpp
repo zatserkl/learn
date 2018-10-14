@@ -1,7 +1,7 @@
 // Andriy Zatserklyaniy <zatserkl@gmail.com> Oct 13, 2018
 
 /*
-clang++ -std=c++17 binary_representation.cpp -o binary_representation
+clang++ -Wall -std=c++17 binary_representation.cpp -o binary_representation
 */
 
 #include <iostream>
