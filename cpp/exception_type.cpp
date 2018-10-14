@@ -6,7 +6,7 @@
 using std::cout;    using std::endl;
 
 /** Important points:
-  * 1) the method what should have quailifier const throw()
+  * 1) the method what() should have quailifier const throw()
   * 2) you are throw an instance of the exception class e.g. MyExceptionType1()
   */
 
