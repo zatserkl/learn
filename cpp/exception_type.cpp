@@ -59,6 +59,7 @@ int main()
     }
 
     catch(std::exception& e) {
+        // printout: Caught std::exception, e: std::exception
         cout<< "Caught std::exception, e: " << e.what() <<endl;
     }
     catch(...) {
