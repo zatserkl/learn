@@ -1,3 +1,11 @@
+// Andriy Zatserklyaniy <zatserkl@gmail.com> Oct 14, 2018
+
+// see https://app.codility.com/public-report-detail/
+
+/*
+clang -Wall equilibrium_point.c
+*/
+
 #include <stdio.h>
 
 int solution(int A[], int N)
