@@ -15,4 +15,8 @@ def fun2():
     print("fun2")
 
 
+def fun1():
+    print("new version of fun1")
+
+
 main()
