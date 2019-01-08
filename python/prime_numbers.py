@@ -1,5 +1,7 @@
 # Andriy Zatserklyaniy <zatserkl@gmail.com> Jan 7, 2019
 
+import sys
+
 
 def prime_numbers(limit):
     """Computes prime numbers that not exceed limit
@@ -23,5 +25,8 @@ def prime_numbers(limit):
 if __name__ == '__main__':
 
     limit = 15
+    if len(sys.argv) > 1:
+        limit = int(sys.argv[1])
+
     primes = prime_numbers(limit)
     print(primes)
