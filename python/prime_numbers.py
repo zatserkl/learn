@@ -4,7 +4,7 @@ import sys
 
 
 def prime_numbers(limit):
-    """Computes prime numbers that not exceed limit
+    """Computes prime numbers that don't exceed limit
     """
 
     primes = [2]
