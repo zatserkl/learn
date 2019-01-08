@@ -7,7 +7,7 @@ def prime_numbers(limit):
     """Computes prime numbers that don't exceed limit
     """
 
-    primes = [2]
+    primes = [2]  # add 1 at the end
 
     for i in range(2, limit+1):
         is_prime = True
@@ -18,6 +18,8 @@ def prime_numbers(limit):
 
         if is_prime:
             primes.append(i)
+
+    primes.insert(0, 1)  # finally add 1
 
     return primes
 
