@@ -7,9 +7,11 @@ def prime_numbers(limit):
     """Computes prime numbers that don't exceed limit
     """
 
-    primes = [2]  # add 1 at the end
+    primes = [2]  # add 1 at the end of the function
 
-    for i in range(2, limit+1):
+    for i in range(3, limit+1, 2):
+        if (i - 1) % 100000 == 0:
+            print('i =', i)
         is_prime = True
         for prime in primes:
             if i % prime == 0:
